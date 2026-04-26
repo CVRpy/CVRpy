@@ -9,62 +9,67 @@ from life import Creativity
 
 class Life(Creativity):
     def __init__(self):
-        self.current_job_title = "Lead Software Engineer"
-        self.current_specialty = "Automation Backend Developer | DevOps Engineer"
-        self.years_of_experience = 12
-
+        self.current_job_title = "Senior Application Security Engineer"
+        self.current_specialty = "AppSec Engineer | Security Tool Developer | AI-Augmented Security"
+        self.years_of_experience = 11
         self.arsenal = {
-            "Backend": ("Django", "FastAPI", "Flask", "BlackSheep", "Sanic", "Tornado", "aiohttp"),
-            "DevOps": ("CI/CD", "GitHub Actions", "Docker", "Kubernetes", "Terraform", "Nginx"),
-            "Cloud": ("Alwyzon", "AWS", "Linode", "Azure", "DigitalOcean"),
+            "Application Security": (
+                "OWASP Top 10", "Web App Penetration Testing",
+                "API Security (REST, GraphQL)", "JWT & OAuth2 Testing",
+                "SQLi", "SSTI", "CMDi", "XXE", "XSS", "SSRF", "CSRF", "IDOR",
+                "WAF Fingerprinting & Bypass", "HTTP Request Smuggling",
+                "Business Logic Flaws", "CVSS 3.1", "CWE Mapping",
+                "Threat Modeling", "Secure Code Review"
+            ),
+            "Security Tooling": (
+                "Burp Suite Extension Dev", "Custom Nuclei Templates",
+                "OOB Detection (DNS/HTTP)", "mitmproxy", "Wireshark",
+                "JS Deobfuscation (AST)", "API Traffic Replay"
+            ),
+            "Backend": (
+                "Python (11y)", "Django", "FastAPI", "Flask",
+                "BlackSheep", "Sanic", "Tornado", "aiohttp"
+            ),
+            "DevSecOps": (
+                "AWS", "GCP", "Azure", "Kubernetes", "Docker",
+                "Terraform (IaC Security)", "CI/CD Security Gates",
+                "Secret Scanning", "IAM Least-Privilege", "GitHub Actions"
+            ),
+            "AI & Security Research": (
+                "LoRA / QLoRA Fine-tuning", "LLM Vulnerability Triage",
+                "AI-Assisted WAF Analysis", "TensorFlow", "PyTorch",
+                "Dataset Curation for Security ML"
+            ),
             "Infrastructure & Messaging": (
-                "RabbitMQ", "Redis", "Celery", "Apache Kafka", "ZeroMQ", 
-                "Memcached", "Elasticsearch", "Supervisor"
+                "RabbitMQ", "Redis", "Celery", "Apache Kafka",
+                "ZeroMQ", "Elasticsearch", "PostgreSQL", "MongoDB"
             ),
             "Automation": ("Selenium", "Playwright", "Botasaurus"),
-            "AI & Machine Learning": ("TensorFlow", "PyTorch", "OpenCV", "Jupyter", "Pandas", "NumPy"),
-            "Databases": ("PostgreSQL", "MySQL", "SQLite", "MongoDB"),
-            "Web Reverse Engineering": (
-                "Burp Suite", "Fiddler", "Postman (advanced debugging)",
-                "Wireshark", "Browser DevTools (Network/Storage inspection)",
-                "mitmproxy", "Playwright/Selenium for dynamic analysis",
-                "JavaScript Deobfuscation (AST, source maps)",
-                "API Traffic Analysis & Replay"
+            "Frontend": (
+                "ReactJS", "Next.js", "Tailwind CSS",
+                "Bootstrap", "MUI", "PWA"
             ),
-            "Frontend": ("ReactJS", "Next.js", "PWA", "Tailwind CSS", "Bootstrap", "Semantic UI", "MUI"),
-            "UI/UX": ("Figma", "Adobe XD"),
-            "Desktop": ("ElectronJS",)
         }
-
         self.arsenal_in_progress = {
-            "DevOps": [
-                "Jenkins", "Helm", "Prometheus",
-                "Grafana", "Ansible"
-            ],
-            "Infrastructure & Messaging": ["ActiveMQ",],
+            "Certifications": ["BSCP (PortSwigger) — Q2 2026"],
+            "Red Team": ["OSCP", "Bug Bounty (HackerOne)", "CVE Hunting"],
         }
-
         self.fields_of_experience = (
-            "Finance & FinTech",
-            "Social Media & Messaging Platforms",
-            "E-Commerce",
-            "Healthcare & MedTech",
-            "E-Learning",
-            "Cloud Infrastructure & SaaS",
             "Cybersecurity",
+            "Finance & FinTech",
+            "Cloud Infrastructure & SaaS",
+            "AI & Data Science",
             "Automation & DevOps",
-            "AI & Data Science"
         )
-
-        self.targeted_position = "The One Who Gets It Done"
+        self.targeted_position = "Senior AppSec Engineer"
         self.open_for_opportunity = True
 
     @property
     def current_projects(self):
         return {
-            "building": "Automating Development Process",
-            "finished": "MatrixAI Bugs Scanner V2.1",
-            "excited_for": "AGI | AI Engineering"
+            "building": "NullAI Security Lab — AI-augmented (~8K LOC, LoRA-tuned LLM)",
+            "finished": "NullAI Scanner V2.1 — OWASP Top 10 · CVSS 3.1 · Working PoCs",
+            "excited_for": "LLM-based Vulnerability Triage | AI Engineering | AGI",
         }
 
     @property
